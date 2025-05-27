@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.github.gmgessicamayara</groupId>
-	<artifactId>vendas-api</artifactId>
+	<artifactId>salesmanagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>vendas-api</name>
 	<description>Demo project for Spring Boot</description>

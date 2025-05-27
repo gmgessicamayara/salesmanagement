@@ -3,6 +3,7 @@ import { Layout } from "components";
 import { Dashboard } from "components/dashboard";
 import { useDashboardService } from "app/services";
 import { DashboardData } from "app/models/dashboard";
+import { AuthenticatedRoute } from "components";
 
 interface HomeProps {
   dashboard: DashboardData;
@@ -10,7 +11,7 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = (props: HomeProps) => {
   return (
-    <div>
+    <AuthenticatedRoute>
       <Head>
         <title>Sales Manager</title>
         <link rel="icon" href="/favicon.ico" />
@@ -24,7 +25,7 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
           salesByMonth={props.dashboard.salesByMonth}
         />
       </Layout>
-    </div>
+    </AuthenticatedRoute>
   );
 };
 
